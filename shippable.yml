@@ -30,6 +30,8 @@ build:
     - go version
     - echo $key1 and $key2
     - if [ "$SHIPPABLE_GO_VERSION" == "1.3" ]; then foobar; fi
+    
+  cache: true
 
 hub:
  integrations:
